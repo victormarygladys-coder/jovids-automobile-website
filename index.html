@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jovids Automobile Limited</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0d10;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  background: #11151a;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f5b400;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+.hero {
+  min-height: 600px;
+  padding: 100px 7%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.75)
+  ),
+  url("https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1600&q=80")
+  center/cover;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero small {
+  color: #f5b400;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 1.1;
+  margin: 15px 0;
+}
+
+h1 span {
+  color: #f5b400;
+}
+
+.hero p {
+  color: #ddd;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  background: #f5b400;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+.btn.dark {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+section {
+  padding: 80px 7%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title h2 {
+  font-size: 36px;
+}
+
+.title p {
+  color: #aaa;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #151a20;
+  padding: 30px;
+  border: 1px solid #292f36;
+  border-radius: 10px;
+}
+
+.card .icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #aaa;
+}
+
+.about {
+  background: #11151a;
+}
+
+.about-box {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-box p {
+  color: #bbb;
+  margin-top: 15px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.contact-box {
+  background: #151a20;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #292f36;
+}
+
+.contact-box p {
+  color: #bbb;
+  margin: 10px 0;
+}
+
+footer {
+  background: #080a0d;
+  padding: 30px 7%;
+  text-align: center;
+  color: #888;
+}
+
+@media (max-width: 750px) {
+
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+JOVIDS AUTOMOBILE
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<small>AUTO REPAIR • DIAGNOSTICS • VEHICLE CARE</small>
+
+<h1>
+Keep Your Car <span>Moving.</span>
+</h1>
+
+<p>
+Professional automobile repair and maintenance services
+for drivers in Magodo, Ikeja and across Lagos.
+</p>
+
+<a class="btn" href="tel:+2348038112614">
+CALL NOW
+</a>
+
+<a class="btn dark"
+href="https://www.google.com/maps/search/?api=1&query=Jovids+Automobile+Limited+CMD+Road+Magodo+Lagos">
+GET DIRECTIONS
+</a>
+
+</div>
+
+</section>
+
+
+<section id="services">
+
+<div class="title">
+
+<h2>Our Services</h2>
+
+<p>
+Reliable automotive services for your vehicle.
+</p>
+
+</div>
+
+
+<div class="services">
+
+<div class="card">
+
+<div class="icon">🔧</div>
+
+<h3>Auto Repairs</h3>
+
+<p>
+Professional vehicle repairs and routine maintenance
+to keep your car running properly.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h3>Computer Diagnostics</h3>
+
+<p>
+Vehicle fault diagnosis to help identify problems
+quickly and accurately.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🛞</div>
+
+<h3>Wheel Alignment</h3>
+
+<p>
+Wheel alignment and balancing services for
+better handling and tyre performance.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔋</div>
+
+<h3>Battery Services</h3>
+
+<p>
+Battery sales and support to help keep your vehicle
+starting reliably.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🚗</div>
+
+<h3>Tyre Services</h3>
+
+<p>
+Tyre sales and repair services for everyday
+vehicle needs.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎨</div>
+
+<h3>Body Work & Painting</h3>
+
+<p>
+Professional body work and painting services
+for vehicle restoration.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="about" id="about">
+
+<div class="about-box">
+
+<div class="title">
+
+<h2>About Jovids Automobile</h2>
+
+</div>
+
+<p>
+Jovids Automobile Limited is an automotive service
+centre located on CMD Road, Magodo Shangisha, Ikeja,
+Lagos.
+</p>
+
+<p>
+Our goal is simple — provide dependable vehicle
+maintenance, repairs and automotive services that
+help keep our customers safely on the road.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<div class="title">
+
+<h2>Contact Us</h2>
+
+<p>Need your vehicle checked? Get in touch.</p>
+
+</div>
+
+
+<div class="contact">
+
+<div class="contact-box">
+
+<h3>📍 Our Location</h3>
+
+<p>
+Opposite Esporta Hotel & Suites,
+CMD Road, Magodo Shangisha,
+Ikeja, Lagos, Nigeria.
+</p>
+
+<a class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Jovids+Automobile+Limited+CMD+Road+Magodo+Lagos">
+OPEN MAP
+</a>
+
+</div>
+
+
+<div class="contact-box">
+
+<h3>📞 Contact</h3>
+
+<p>
+Phone:
+<a href="tel:+2348038112614">
+0803 811 2614
+</a>
+</p>
+
+<p>
+Available for service enquiries and
+vehicle maintenance appointments.
+</p>
+
+<a class="btn"
+href="tel:+2348038112614">
+CALL JOVIDS
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Jovids Automobile Limited.
+All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
